@@ -12,232 +12,299 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     
-    <section id="gig-bar">
-        <div class="container">
-            <div class="wrapper">
-                <div class="navbar d-flex">
-                    <div class="navbar-wrap">
-                        <div class="education nav-item-box d-flex">
-                            <button class="edu-button">
-                                <h2>
-                                    <span>
-                                        Education
-                                    </span>
-                                </h2>
-                            </button>
-                        </div>
-                        <div class="experience nav-item-box d-flex">
-                            <button class="exp-button">
-                                <h2>
-                                    <span>
-                                        Experience
-                                    </span>
-                                </h2>
-                            </button>
-                        </div>
-                        <div class="volunteer nav-item-box d-flex">
-                            <button class="vol-button">
-                                <h2>
-                                    <span>
-                                        Volunteer
-                                    </span>
-                                </h2>
-                            </button>
-                        </div>
+    <div class="background d-flex">
+        <section id="background">
+            <div class="wrapper d-flex">
+                <div class="binary-bg d-flex">
+                    <div class="glass-block">
                     </div>
+                    <h1>
+                        010100101<br>
+                        101001100<br>
+                        101010010<br>
+                        100100110<br>
+                        010101001<br>
+                        100010011<br>
+                        100101010<br>
+                        100101010<br>
+                        100101010<br>
+                    </h1>
                 </div>
-                <div class="overall-menu d-flex">
-                    <div name="education" class="menu menu-visible">
-                        <div class="exp-1 d-flex exp-box">
-                            <div class="exp-wrap d-flex">
-                                <div class="exp-name d-flex">
-                                    <ul>
-                                        <li class="">
-                                            <h3>
-                                                Pursuing B.Tech in <span style="opacity: 60%;">Artificial Intelligence and Data Science</span> from <a href="https://www.dauniv.ac.in/"><span>Devi Ahilya Vishwavidyalaya, indore</span></a>
-                                            </h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="exp-duration d-flex">
-                                    <p>2021-present</p>
-                                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="root">
+        <section id="gig-bar">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="navbar d-flex">
+                        <div class="navbar-wrap">
+                            <div class="education nav-item-box d-flex">
+                                <button class="edu-button">
+                                    <h2>
+                                        <span>
+                                            Education
+                                        </span>
+                                    </h2>
+                                </button>
                             </div>
-                        </div>
-                        <div class="exp-1 d-flex exp-box">
-                            <div class="exp-wrap d-flex">
-                                <div class="exp-name d-flex">
-                                    <ul>
-                                        <li class="">
-                                            <h3>
-                                                Secondary Education from <span>Nav Aadarsh Vidya Niketan (MPBSE affiliated)</span>.
-                                            </h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="exp-duration d-flex">
-                                    <p>2020-2021</p>
-                                </div>
+                            <div class="experience nav-item-box d-flex">
+                                <button class="exp-button">
+                                    <h2>
+                                        <span>
+                                            Experience
+                                        </span>
+                                    </h2>
+                                </button>
                             </div>
-                        </div>
-                        <div class="exp-1 d-flex exp-box">
-                            <div class="exp-wrap d-flex">
-                                <div class="exp-name d-flex">
-                                    <ul>
-                                        <li class="">
-                                            <h3>
-                                                Higher Secondary Education from <a href=""><span>CPS, indore (CBSE affiliated)</span></a>
-                                            </h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="exp-duration d-flex">
-                                    <p>2018-2019</p>
-                                </div>
+                            <div class="volunteer nav-item-box d-flex">
+                                <button class="vol-button">
+                                    <h2>
+                                        <span>
+                                            Volunteer
+                                        </span>
+                                    </h2>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div name="experience" class="menu menu-not">
-                        <div class="exp-1 d-flex exp-box">
-                            <div class="exp-wrap d-flex">
-                                <div class="exp-name d-flex">
-                                    <ul>
-                                        <li class="">
-                                            <h3>
-                                                Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
-                                            </h3>
-                                        </li>
-                                    </ul>
+                    <div class="overall-menu d-flex">
+                        <div id="education-menu" name="education" class="menu education-menu">
+                            <div class="exp-1 d-flex exp-box">
+                                <div class="exp-wrap d-flex">
+                                    <div class="exp-name d-flex">
+                                        <ul>
+                                            <li class="">
+                                                <h3>
+                                                    Pursuing B.Tech in <span style="opacity: 60%;">Artificial Intelligence and Data Science</span> from <a href="https://www.dauniv.ac.in/"><span>Devi Ahilya Vishwavidyalaya, indore</span></a>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-duration d-flex">
+                                        <p>2021-present</p>
+                                    </div>
                                 </div>
-                                <div class="exp-duration d-flex">
-                                    <p>Sep 23 - Nov 23</p>
+                            </div>
+                            <div class="exp-1 d-flex exp-box">
+                                <div class="exp-wrap d-flex">
+                                    <div class="exp-name d-flex">
+                                        <ul>
+                                            <li class="">
+                                                <h3>
+                                                    Secondary Education from <span>Nav Aadarsh Vidya Niketan (MPBSE affiliated)</span>.
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-duration d-flex">
+                                        <p>2020-2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-1 d-flex exp-box">
+                                <div class="exp-wrap d-flex">
+                                    <div class="exp-name d-flex">
+                                        <ul>
+                                            <li class="">
+                                                <h3>
+                                                    Higher Secondary Education from <a href=""><span>CPS, indore (CBSE affiliated)</span></a>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-duration d-flex">
+                                        <p>2018-2019</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="exp-1 d-flex exp-box">
-                            <div class="exp-wrap d-flex">
-                                <div class="exp-name d-flex">
-                                    <ul>
-                                        <li class="">
-                                            <h3>
-                                                Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
-                                            </h3>
-                                        </li>
-                                    </ul>
+                        <div id="experience-menu" name="experience" class="menu experience-menu">
+                            <div class="exp-1 d-flex exp-box">
+                                <div class="exp-wrap d-flex">
+                                    <div class="exp-name d-flex">
+                                        <ul>
+                                            <li class="">
+                                                <h3>
+                                                    Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-duration d-flex">
+                                        <p>Sep 23 - Nov 23</p>
+                                    </div>
                                 </div>
-                                <div class="exp-duration d-flex">
-                                    <p>Sep 23 - Nov 23</p>
+                            </div>
+                            <div class="exp-1 d-flex exp-box">
+                                <div class="exp-wrap d-flex">
+                                    <div class="exp-name d-flex">
+                                        <ul>
+                                            <li class="">
+                                                <h3>
+                                                    Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-duration d-flex">
+                                        <p>Sep 23 - Nov 23</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-1 d-flex exp-box">
+                                <div class="exp-wrap d-flex">
+                                    <div class="exp-name d-flex">
+                                        <ul>
+                                            <li class="">
+                                                <h3>
+                                                    Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-duration d-flex">
+                                        <p>Sep 23 - Nov 23</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-1 d-flex exp-box">
+                                <div class="exp-wrap d-flex">
+                                    <div class="exp-name d-flex">
+                                        <ul>
+                                            <li class="">
+                                                <h3>
+                                                    Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-duration d-flex">
+                                        <p>Sep 23 - Nov 23</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="exp-1 d-flex exp-box">
-                            <div class="exp-wrap d-flex">
-                                <div class="exp-name d-flex">
-                                    <ul>
-                                        <li class="">
-                                            <h3>
-                                                Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
-                                            </h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="exp-duration d-flex">
-                                    <p>Sep 23 - Nov 23</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="exp-1 d-flex exp-box">
-                            <div class="exp-wrap d-flex">
-                                <div class="exp-name d-flex">
-                                    <ul>
-                                        <li class="">
-                                            <h3>
-                                                Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
-                                            </h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="exp-duration d-flex">
-                                    <p>Sep 23 - Nov 23</p>
+                        <div id="volunteer-menu" name="volunteer" class="menu volunteer-menu">
+                            <div class="exp-1 d-flex exp-box">
+                                <div class="exp-wrap d-flex">
+                                    <div class="exp-name d-flex">
+                                        <ul>
+                                            <li class="">
+                                                <h3>
+                                                    Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-duration d-flex">
+                                        <p>Sep 23 - Nov 23</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div name="volunteer" class="menu menu-not">
-                        <div class="exp-1 d-flex exp-box">
-                            <div class="exp-wrap d-flex">
-                                <div class="exp-name d-flex">
-                                    <ul>
-                                        <li class="">
-                                            <h3>
-                                                Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
-                                            </h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="exp-duration d-flex">
-                                    <p>Sep 23 - Nov 23</p>
+                            <div class="exp-1 d-flex exp-box">
+                                <div class="exp-wrap d-flex">
+                                    <div class="exp-name d-flex">
+                                        <ul>
+                                            <li class="">
+                                                <h3>
+                                                    Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-duration d-flex">
+                                        <p>Sep 23 - Nov 23</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="exp-1 d-flex exp-box">
-                            <div class="exp-wrap d-flex">
-                                <div class="exp-name d-flex">
-                                    <ul>
-                                        <li class="">
-                                            <h3>
-                                                Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
-                                            </h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="exp-duration d-flex">
-                                    <p>Sep 23 - Nov 23</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="exp-1 d-flex exp-box">
-                            <div class="exp-wrap d-flex">
-                                <div class="exp-name d-flex">
-                                    <ul>
-                                        <li class="">
-                                            <h3>
-                                                Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
-                                            </h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="exp-duration d-flex">
-                                    <p>Sep 23 - Nov 23</p>
+                            <div class="exp-1 d-flex exp-box">
+                                <div class="exp-wrap d-flex">
+                                    <div class="exp-name d-flex">
+                                        <ul>
+                                            <li class="">
+                                                <h3>
+                                                    Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-duration d-flex">
+                                        <p>Sep 23 - Nov 23</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="exp-1 d-flex exp-box">
-                            <div class="exp-wrap d-flex">
-                                <div class="exp-name d-flex">
-                                    <ul>
-                                        <li class="">
-                                            <h3>
-                                                Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
-                                            </h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="exp-duration d-flex">
-                                    <p>Sep 23 - Nov 23</p>
+                            <div class="exp-1 d-flex exp-box">
+                                <div class="exp-wrap d-flex">
+                                    <div class="exp-name d-flex">
+                                        <ul>
+                                            <li class="">
+                                                <h3>
+                                                    Senior FrontEnd developer at <a href="https://tricolsolutions.com/"><span>Tricol Solutions</span></a>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-duration d-flex">
+                                        <p>Sep 23 - Nov 23</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <section id="buttons">
+            <div class="container d-flex">
+                <div class="wrapper d-flex">
+                    <button class="previous-btn d-flex btn left">
+                        <i id="arrow-left" class="fa-solid fa-arrow-left arrow" style="color: #ffffff;"></i>
+                        <h6>
+                            Previous
+                        </h6>
+                    </button>
+                    <button class="next-btn d-flex btn right">
+                        <h6>
+                            Next
+                        </h6>
+                        <i id="arrow-right" class="fa-solid fa-arrow-right arrow" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
 
+        <section id="main-header">
+            <div class="container d-flex">
+                <div class="wrapper d-flex">
+                    <div class="main-head d-flex">
+                        <h1>
+                            <span>HELLO</span>,<br>
+                            <span class="primary-color">RISHABH</span><br>
+                            <span class="dull-color">JAISWAL</span><br>
+                            <span>THIS SIDE</span>.
+                        </h1>
+                    </div>
+                    <div class="sub-head d-flex">
+                        <h4>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum urna mi, at tristique augue consectetur quis. Vivamus non est tellus. Cras convallis arcu a.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

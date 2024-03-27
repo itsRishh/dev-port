@@ -25,7 +25,12 @@ a {
     justify-content: center;
 }
 
+
+/*---------------------------------- gigs-bar ----------------------------------*/
+
 #gig-bar {
+    display: none;
+    z-index: 99;
     width: 450px;
     height: 460px;
     border: 1px solid #2f2f2f;
@@ -96,11 +101,15 @@ a {
     padding-right: 0.1rem;
 }
 
+.overall-menu {
+    width: 404px;
+}
+
 .menu {
     overflow-y: scroll;
+    scroll-behavior: smooth;
     height: 360px;
-    width: 452px;
-    padding-right: 24px;
+    padding-right: 26px;
 }
 
 .exp-box {
@@ -144,16 +153,209 @@ a {
 }
 
 
-
-.menu-visible {
-    position: relative;
-    visibility: visible;
+#education-menu {
+    display: block;
 }
 
-.menu-not {
+#experience-menu {
+    display: none;
+}
+
+#volunteer-menu {
+    display: none;
+}
+
+/*---------------------------------- gigs-bar ----------------------------------*/
+
+
+
+/*-------------------------------------- buttons --------------------------------------*/
+
+#buttons {
+    display: none;
+}
+
+#buttons .wrapper {
+    gap: 0.8rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    gap: 1rem;
+    width: 180px;
+    height: 70px;
+    background-color: #0000007a;
+    color: #FFF;
+}
+
+.arrow {
+    opacity: 30%;
+    font-size: 18px;
+}
+
+.btn h6 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'outfit', sans-serif;
+    letter-spacing: 1px;
+}
+
+.left:hover #left {
+    animation: motion-left 1s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+}
+
+.right:hover #right {
+    animation: motion-right 1s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+}
+
+@keyframes motion-left {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-4px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes motion-right {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(4px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+/*-------------------------------------- buttons --------------------------------------*/
+
+
+
+/*-------------------------------------- background --------------------------------------*/
+
+.background {
     position: absolute;
-    visibility: hidden;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    justify-content: flex-end;
 }
+
+.glass-block {
+    width: 250px;
+    /* border: 1px solid green; */
+    height: 100vh;
+    position: absolute;
+    left: -80px;
+    background-color: #ffc34151;
+    border: 1px solid #ffc34161;
+    border-top: none;
+    border-bottom: none;
+    backdrop-filter: blur(3px);
+    box-shadow: 25px 0px 45px rgba(0, 0, 0, 0.556);
+}
+
+.binary-bg {
+    height: 100vh;
+    position: relative;
+    left: 60px;
+}
+
+.binary-bg h1 {
+    font-size: 96px;
+    font-weight: 900;
+    color: #2a2a2a96;
+    font-family: 'outfit', sans-serif;
+    max-height: 100vh;
+    line-height: 1.1;
+    letter-spacing: 3px;
+}
+
+/*-------------------------------------- background --------------------------------------*/
+
+
+/*-------------------------------------- main-head --------------------------------------*/
+
+#main-header {
+    display: none;
+    width: 580px;
+    /* border: 1px solid yellow; */
+}
+
+#main-header .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-head h1 {
+    font-size: 112px;
+    line-height: 0.9;
+    font-family: 'outfit', sans-serif;
+    font-weight: 800;
+    color: #FFF;
+}
+
+.primary-color {
+    color: #FFC241;
+}
+
+.dull-color {
+    color: #ffc3415b;
+}
+
+.sub-head {
+    margin-top: 1rem;
+}
+
+.sub-head h4 {
+    font-weight: 400;
+    /* padding-left: 10px; */
+    line-height: 1.2;
+}
+
+/*-------------------------------------- main-head --------------------------------------*/
+
+
+/*-------------------------------------- lower-main-head --------------------------------------*/
+
+
+
+/*-------------------------------------- lower-main-head --------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -176,7 +378,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #242424;
+    background-color: #24242456;
     border-radius: 1rem;
 }
 
