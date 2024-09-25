@@ -2,17 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'outfit', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    /* font-family: 'outfit', sans-serif; */
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #0c0f0a;
-    color: #999999;
-    font-family: 'poppins', sans-serif;
+    background-color: #010101;
+    color: #fff;
 }
 
 a {
@@ -25,362 +26,227 @@ a {
     justify-content: center;
 }
 
+/*--------------------------------------- HERO SECTION ---------------------------------------*/
 
-/*---------------------------------- gigs-bar ----------------------------------*/
+.page-1 {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    padding: 50px 70px;
+    position: relative;
 
-#gig-bar {
-    display: none;
-    z-index: 99;
-    width: 450px;
-    height: 460px;
-    border: 1px solid #2f2f2f;
-    border-radius: 30px;
-    padding: 0.5rem 1rem 2rem;
-    background-color: #0c0f0a;
 }
 
-#gig-bar .wrapper {
-    /* border: 1px solid yellow; */
-    margin: 0rem 1rem;
+#top-header {
+    width: 100%;
 }
 
-.navbar {
-    border-bottom: 2px solid #202020;
-    padding: 1.2rem 0rem 1.6rem;
-}
-
-.navbar-wrap {
+#top-header header {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    /* border: 1px solid green; */
 }
 
-.navbar-wrap button h2 {
-    font-size: 14px;
+#top-header header h1 {
+    font-size: 12px;
     font-weight: 500;
-    padding: 0.2rem 0.5rem;
-    color: #999999;
-    /* border: 1px solid yellow; */
 }
 
-.navbar-wrap button {
-    border-radius: 4px;
-    border: 1px solid #0c0f0a;
-    padding: 0.2rem 0.5rem;
-    background-color: transparent;
-    transition: 0.2s all ease-out;
+.name {
+    padding: 2px 4px;
+    background-color: #9400ff;
+    font-weight: 600;
+    color: #000;
 }
 
-.navbar-wrap button:hover {
-    border-radius: 4px;
-    border: 1px solid #1c1c1c;
-    padding: 0.2rem 0.5rem;
-    background-color: #171717;
-    /* transition: 0.2s all cubic-bezier(0.47, 0, 0.745, 0.715); */
-    transition: 0.4s all cubic-bezier(.51,.92,.24,1.15);
+.hero {
+    padding: 20px 0;
+    z-index: 999;
+    /* position: relative; */
 }
 
-.navbar-wrap button:active {
-    background-color: #2a2a2a;
-    transform: translateY(2px);
-}
-
-.nav-item-box {
-    padding: 0.2rem 1rem;
-    border-right: 2px solid #242424;
-}
-
-.nav-item-box:first-child {
-    padding-left: 0.1rem;
-}
-
-.nav-item-box:last-child {
-    border-right: none;
-    padding-right: 0.1rem;
-}
-
-.overall-menu {
-    width: 404px;
-}
-
-.menu {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    height: 360px;
-    padding-right: 26px;
-}
-
-.exp-box {
-    border-bottom: 2px solid #202020;
-}
-
-.exp-1 {
-    /* border: 1px solid yellow; */
-    padding: 1.5rem 0rem;
-}
-
-.exp-wrap {
-    align-items: flex-start;
-    justify-content: space-between;
-    /* border: 1px solid green; */
-}
-
-.exp-name {
-    width: 60%;
-}
-
-.exp-name ul {
-    margin-left: 24px;
-}
-
-.exp-name h3 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.3;
-    color: #fff;
-}
-
-.exp-name h3 span {
-    color: #FFC241;
-}
-
-.exp-duration p {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: right;
-}
-
-
-#education-menu {
-    display: block;
-}
-
-#experience-menu {
-    display: none;
-}
-
-#volunteer-menu {
-    display: none;
-}
-
-/*---------------------------------- gigs-bar ----------------------------------*/
-
-
-
-/*-------------------------------------- buttons --------------------------------------*/
-
-#buttons {
-    display: none;
-}
-
-#buttons .wrapper {
-    gap: 0.8rem;
-}
-
-.btn {
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 50px;
-    gap: 1rem;
-    width: 180px;
-    height: 70px;
-    background-color: #0000007a;
-    color: #FFF;
-}
-
-.arrow {
-    opacity: 30%;
-    font-size: 18px;
-}
-
-.btn h6 {
-    font-size: 18px;
-    font-weight: 500;
-    font-family: 'outfit', sans-serif;
-    letter-spacing: 1px;
-}
-
-.left:hover #left {
-    animation: motion-left 1s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
-}
-
-.right:hover #right {
-    animation: motion-right 1s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
-}
-
-@keyframes motion-left {
-    0% {
-        transform: translateX(0px);
-    }
-    50% {
-        transform: translateX(-4px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-
-@keyframes motion-right {
-    0% {
-        transform: translateX(0px);
-    }
-    50% {
-        transform: translateX(4px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-
-
-/*-------------------------------------- buttons --------------------------------------*/
-
-
-
-/*-------------------------------------- background --------------------------------------*/
-
-.background {
-    position: absolute;
-    z-index: -1;
-    top: 0px;
-    left: 0px;
-    height: 100vh;
-    overflow: hidden;
-    width: 100vw;
-    justify-content: flex-end;
-}
-
-.glass-block {
-    width: 250px;
-    /* border: 1px solid green; */
-    height: 100vh;
-    position: absolute;
-    left: -80px;
-    background-color: #ffc34151;
-    border: 1px solid #ffc34161;
-    border-top: none;
-    border-bottom: none;
-    backdrop-filter: blur(3px);
-    box-shadow: 25px 0px 45px rgba(0, 0, 0, 0.556);
-}
-
-.binary-bg {
-    height: 100vh;
-    position: relative;
-    left: 60px;
-}
-
-.binary-bg h1 {
-    font-size: 96px;
-    font-weight: 900;
-    color: #2a2a2a96;
-    font-family: 'outfit', sans-serif;
-    max-height: 100vh;
+.hero h1 {
+    font-size: 9vw;
     line-height: 1.1;
-    letter-spacing: 3px;
+    font-weight: 900;
+    position: relative;
+    left: -5px;
 }
 
-/*-------------------------------------- background --------------------------------------*/
+/*----------------------------------------- CODe -----------------------------------------*/
 
-
-/*-------------------------------------- main-head --------------------------------------*/
-
-#main-header {
-    display: none;
-    width: 580px;
-    /* border: 1px solid yellow; */
+.conpf, .conps {
+    color: #9400ff;
 }
 
-#main-header .wrapper {
-    flex-direction: column;
-    align-items: flex-start;
+
+
+/*----------------------------------------- CODe -----------------------------------------*/
+
+
+/* sign */
+
+.sign {
+    position: relative;
 }
 
-.main-head h1 {
-    font-size: 112px;
-    line-height: 0.9;
-    font-family: 'outfit', sans-serif;
-    font-weight: 800;
-    color: #FFF;
-}
-
-.primary-color {
-    color: #FFC241;
-}
-
-.dull-color {
-    color: #ffc3415b;
-}
-
-.sub-head {
-    margin-top: 1rem;
-}
-
-.sub-head h4 {
+.sign .sign-in {
+    font-family: 'Reenie Beanie';
     font-weight: 400;
-    /* padding-left: 10px; */
-    line-height: 1.2;
+    color: #9400ff;
 }
 
-/*-------------------------------------- main-head --------------------------------------*/
+/*----------------------------------------- ANIME PART -----------------------------------------*/
+
+.anime-h {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.8vw;
+}
+
+.anime-h .anime-cont {
+    position: relative;
+    flex-direction: column;
+    pointer-events: none;
+    user-select: none;
+}
+
+.anime-h div h1 {
+    position: relative;
+    color: #9400ff;
+    pointer-events: none;
+    line-height: 0.8;
+    /* z-index: 2; */
+}
+
+.video-cont {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: -5px;
+    overflow: hidden;
+    /* z-index: -1; */
+    mix-blend-mode: darken;
+}
+
+.anime-h video {
+    width: 100%;
+    pointer-events: none;
+    transform: rotate(270deg);
+}
+
+/*----------------------------------------- ANIME PART -----------------------------------------*/
 
 
-/*-------------------------------------- lower-main-head --------------------------------------*/
+/*------------------------------------------- STRIPS -------------------------------------------*/
+
+#strips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.strip1 {
+    background-color: #9400ff;
+    width: 150vw;
+    position: absolute;
+    top: 90vh;
+    left: -50px;
+    transform: rotate(10deg);
+    /* z-index: 1; */
+}
+
+.strip1 .strip-in {
+    display: flex;
+    padding: 5px 0px;
+    animation: strip-anim 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+.strip1 h4 {
+    display: inline-block;
+    white-space: nowrap;
+    color: #000;
+    font-size: 11px;
+    font-weight: 800;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+
+@keyframes strip-anim {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
 
 
 
-/*-------------------------------------- lower-main-head --------------------------------------*/
+.strip2 {
+    background-color: #FFF;
+    color: #000;
+    width: 80vw;
+    position: absolute;
+    top: 480px;
+    right: -15vw;
+    transform: rotate(-25deg);
+    /* z-index: 1; */
+}
+
+.strip2 .strip-in {
+    display: flex;
+    padding: 5px 0px;
+    animation: strip-anim 8s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite reverse;
+}
+
+.strip2 h4 {
+    display: inline-block;
+    white-space: nowrap;
+    color: #000;
+    font-size: 11px;
+    font-weight: 800;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+
+/*------------------------------------------- STRIPS -------------------------------------------*/
+
+
+.footer {
+    margin-top: 3rem;
+}
 
 
 
 
+.page2 {
+    height: 100vh;
+    width: 100%;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* scrollbar  */
 
 ::-webkit-scrollbar {
     width: 0.3em;
-    height: 0.1em;
+    height: 0.3em;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #0c0f0a;
-    margin: 0.4em;
+    background-color: #000;
+    /* margin: 0.8em; */
     border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #24242456;
+    background-color: #9400ff;
     border-radius: 1rem;
 }
-
-/* scrollbar  */
-
